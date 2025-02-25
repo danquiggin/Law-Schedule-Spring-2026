@@ -809,7 +809,7 @@ const scheduleData = {
             ],
             "extendedProps": {
                 "instructor": "Arora, M",
-                "room": "244",
+                "room": "247",
                 "modality": "F2F, WR",
                 "capacity": "15",
                 "year": "",
@@ -1034,6 +1034,22 @@ const scheduleData = {
             }
         },
         {
+            "title": "Intellectual Property Survey",
+            "startTime": "06:00 PM",
+            "endTime": "08:45 AM",
+            "daysOfWeek": [
+                2
+            ],
+            "extendedProps": {
+                "instructor": "Varadarajan, D",
+                "room": "342",
+                "modality": "F2F",
+                "capacity": "60",
+                "year": "",
+                "credit": "3"
+            }
+        },
+        {
             "title": "International Human Rights",
             "startTime": "01:15 PM",
             "endTime": "02:30 PM",
@@ -1046,6 +1062,22 @@ const scheduleData = {
                 "room": "346",
                 "modality": "F2F",
                 "capacity": "30",
+                "year": "",
+                "credit": "3"
+            }
+        },
+        {
+            "title": "Linguistic Analysis of Legal Texts",
+            "startTime": "04:10 PM",
+            "endTime": "05:50 PM",
+            "daysOfWeek": [
+                3
+            ],
+            "extendedProps": {
+                "instructor": "Cunningham, C",
+                "room": "346",
+                "modality": "F2F, WR",
+                "capacity": "40",
                 "year": "",
                 "credit": "3"
             }
@@ -1404,7 +1436,7 @@ const scheduleData = {
                 3
             ],
             "extendedProps": {
-                "instructor": "Chase, S",
+                "instructor": "Chase, S & Hill, J",
                 "room": "347",
                 "modality": "F2F",
                 "capacity": "12",
@@ -1523,6 +1555,23 @@ const scheduleData = {
                 "room": "344",
                 "modality": "F2F",
                 "capacity": "16",
+                "year": "",
+                "credit": "3"
+            }
+        },
+        {
+            "title": "Climate Change Law",
+            "startTime": "09:00 AM",
+            "endTime": "10:15 AM",
+            "daysOfWeek": [
+                1,
+                3
+            ],
+            "extendedProps": {
+                "instructor": "Iyer, M",
+                "room": "244",
+                "modality": "F2F",
+                "capacity": "24",
                 "year": "",
                 "credit": "3"
             }
