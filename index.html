@@ -41,7 +41,9 @@
   .event-year-1 {
     background-color: #2ec414;  /* Set the color for Year 1 */
   }
-
+  .event-online {
+    background-color: #ff7676;  /* Set the color for online classes*/
+  }
   .event-default {
     background-color: #6495ED;  /* Default color for other events */
   }
@@ -78,7 +80,7 @@
 
   <table class="tags">
     <tbody>
-    <tr>F2F: Face to Face<br> B: Blended<br> OS: Online Synchronous<br> WR: Satisfies Writing Requirement</tr>
+    <tr>F2F: Face to Face<br> B: Blended<br> OS: Online Synchronous<br> WR: Satisfies Writing Requirement<br>OA: Online Asynchronous</tr>
     </tbody>
   </table>
 
@@ -87,6 +89,7 @@
     <li>Evidence (spring):This course is intended primarily for part-time students. Registration priority will be given to part-time students.</li>
     <li>Mediation Clinic (spring): Meets depending on the schedule of the student on M, T, or Th from 8:15 - 4:30.</li>
     <li>Global Perspectives on Children and the Law (spring): Requires instructor permission to enroll. If interested, email Prof. Todres at least 5 days before registration begins.</li>
+
 </ol>
 
   <h2>Online Classes</h2>
@@ -105,6 +108,9 @@
     </tbody>
   </table>
 
+      <!-- Online classes will be populated by JavaScript -->
+    </tbody>
+  </table>
   <!-- Load events.js containing scheduleData -->
   <script src="eventsspring2026.js"></script>
   <script>
@@ -138,12 +144,21 @@
               const eventDiv = document.createElement('div');
               eventDiv.classList.add('event');
 
+               // Check if the class is online
+              if (event.extendedProps.modality.toString().includes("O")) {
+                eventDiv.classList.add('event-online');
+
+                }
+
               // Check if the "Year" is 1 and apply the appropriate class
-              if (event.extendedProps.year && event.extendedProps.year.toString().includes("1")) {
+              else if (event.extendedProps.year && event.extendedProps.year.toString().includes("1")) {
                 eventDiv.classList.add('event-year-1');
+
               } else {
                 eventDiv.classList.add('event-default');
               }
+
+
 
               // Populate the event details
               eventDiv.innerHTML = `${event.title}<br><br>${event.extendedProps.instructor}<br><br>Room: ${event.extendedProps.room} <br>${event.startTime}:${event.endTime}<br>${event.extendedProps.modality}`;
